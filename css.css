@@ -50,6 +50,8 @@ a {
 	outline: none;
 	vertical-align:baseline;
 	background:transparent;
+	text-decoration: none;
+	cursor: pointer;
 }
 ins {
 	background-color:#ff9;
@@ -100,112 +102,152 @@ img{
 	--background: #F6F5F2;
 	--primary: #BAD3FF;
 	--secondary: #E6EEFD;
-	--accent: #050C28;
+	--accent: #08133f;
+	--grey: #777777;
 	--white-op: rgba(255, 255, 255, 0.25);
-
-	transition: background-color 10s ease-out, color 10s ease-out, display 3.8s ease-out, fill 3.8s ease-out !important;
 }
 body{
 	background-color: var(--background);
+	line-height: 1.2rem;
+	font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.content_wrapper{
+	max-width: 1280px;
+	widows: 100%;
+	margin: 0 auto;
+}
+* {
+    -webkit-transition:.2s ease-in-out;
+    -moz-transition:.2s ease-in-out;
+    -o-transition:.2s ease-in-out;
+    transition:.2s ease-in-out;
+}
+.section{
+
 }
 
+/* ===================================
+	2. Header / Menu CSS
+====================================== */
+header{
+	padding: 20px 0;
+	position: fixed;
+	background-color: var(--background);
+	width: 100%;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.nav_center>a{
+	color: var(--grey);
+	border-radius: 6px;
+	padding: 12px;
+	margin-right: 8px;
+}
+.nav_center>a:last-of-type{
+	margin-right: 0;
+}
+.nav_center>a:hover{
+	background-color: rgba(0, 0, 0, .02);
+}
+.nav_touch{
+	background-color: var(--primary);
+	border-radius: 6px;
+	padding: 12px;
+	display: block;
+}
+.nav_touch:hover{
+	opacity: 75%;
+}
+.nav_touch>div{
+	display: flex;
+	align-items: flex-start;
+}
+.nav_touch>div>p{
+	
+}
+.nav_touch>div>svg{
+	margin-left: 8px;
+	width: 10px;
+	height: 10px;
+}
+/* ===================================
+	3. Section hero
+====================================== */
+.hero{
+	padding: 200px 0 100px 40px;
+	display: flex;
+	gap: 60px;
+}
+.hero_left{
+	max-width: 470px;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
 h1{
-	font-family: "Libre Baskerville", sans-serif;
+	font-family: "Great Vibes", cursive;
 	font-optical-sizing: auto;
 	font-weight: 100;
-	font-style: normal;
+	font-size: 120px;
+	line-height: 1em;
+	letter-spacing: -0.02em;
+	margin-bottom: 20px;
+}
+.hero_left>p{
+	max-width: 300px;
+	color: var(--grey);
+	margin-bottom: 20px;
 }
 
-p{
-	font-family: "SpaceGrotesk-Regular", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
+.hero_right{
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+}
+.hero_right_left{
+	position: relative;
+}
+.hero_bal{
+	max-width: 350px;
+	height: 500px;
+	overflow: clip;
+	border-radius: 35px;
+}
+.hero_bal>img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center top;
+}
+.hero_bullet{
+	position: absolute;
+	right: -100px;
+	top: 106px;
+	background-color: var(--secondary);
+	border: 1px solid var(--accent);
+	border-radius: 50px;
+	padding: 12px;
+	color: var(--accent);
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+.hero_bullet:last-of-type{
+	left: 44px;
+	top: 412px;
+	right: unset;
+}
+.hero_bullet>svg{
+	width: 24px;
 }
 
-
-
-
-
-
-/**
-* @license
-*
-* Font Family: Space Grotesk
-* Designed by: Florian Karsten
-* URL: https://www.fontshare.com/fonts/space-grotesk
-* © 2025 Indian Type Foundry
-*
-* Space Grotesk Light 
-* Space Grotesk Regular 
-* Space Grotesk Medium 
-* Space Grotesk SemiBold 
-* Space Grotesk Bold 
-* Space Grotesk Variable (Variable font)
-
-*
-*/
-@font-face {
-  font-family: 'SpaceGrotesk-Light';
-  src: url('./fonts/SpaceGrotesk-Light.woff2') format('woff2'),
-       url('./fonts/SpaceGrotesk-Light.woff') format('woff'),
-       url('./fonts/SpaceGrotesk-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SpaceGrotesk-Regular';
-  src: url('./fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-       url('./fonts/SpaceGrotesk-Regular.woff') format('woff'),
-       url('./fonts/SpaceGrotesk-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SpaceGrotesk-Medium';
-  src: url('./fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
-       url('./fonts/SpaceGrotesk-Medium.woff') format('woff'),
-       url('./fonts/SpaceGrotesk-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SpaceGrotesk-SemiBold';
-  src: url('./fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
-       url('./fonts/SpaceGrotesk-SemiBold.woff') format('woff'),
-       url('./fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SpaceGrotesk-Bold';
-  src: url('./fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-       url('./fonts/SpaceGrotesk-Bold.woff') format('woff'),
-       url('./fonts/SpaceGrotesk-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 300.0;
-*
-* available axes:
-'wght' (range from 300.0 to 700.0
-*/
-@font-face {
-  font-family: 'SpaceGrotesk-Variable';
-  src: url('./fonts/SpaceGrotesk-Variable.woff2') format('woff2'),
-       url('./fonts/SpaceGrotesk-Variable.woff') format('woff'),
-       url('./fonts/SpaceGrotesk-Variable.ttf') format('truetype');
-  font-weight: 300 700;
-  font-display: swap;
-  font-style: normal;
-}
-
+/* ===================================
+	3. Section doubts
+====================================== */
