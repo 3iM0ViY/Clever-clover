@@ -1,155 +1,97 @@
 h1{
-	font-family: "Inter", sans-serif;
+	font-family: "Libre Baskerville", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 100;
 	font-style: normal;
 }
+
 p{
-	font-family: "GeneralSans-Extralight", sans-serif;
+	font-family: "SpaceGrotesk-Regular", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 }
 
+
+
+
+/**
+* @license
+*
+* Font Family: Space Grotesk
+* Designed by: Florian Karsten
+* URL: https://www.fontshare.com/fonts/space-grotesk
+* © 2025 Indian Type Foundry
+*
+* Space Grotesk Light 
+* Space Grotesk Regular 
+* Space Grotesk Medium 
+* Space Grotesk SemiBold 
+* Space Grotesk Bold 
+* Space Grotesk Variable (Variable font)
+
+*
+*/
 @font-face {
-	font-family: 'GeneralSans-Extralight';
-	src: url('./fonts/GeneralSans-Extralight.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Extralight.woff') format('woff'),
-			 url('./fonts/GeneralSans-Extralight.ttf') format('truetype');
-	font-weight: 200;
-	font-display: swap;
-	font-style: normal;
+  font-family: 'SpaceGrotesk-Light';
+  src: url('./fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+       url('./fonts/SpaceGrotesk-Light.woff') format('woff'),
+       url('./fonts/SpaceGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'GeneralSans-ExtralightItalic';
-	src: url('./fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
-			 url('./fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
-	font-weight: 200;
-	font-display: swap;
-	font-style: italic;
+  font-family: 'SpaceGrotesk-Regular';
+  src: url('./fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+       url('./fonts/SpaceGrotesk-Regular.woff') format('woff'),
+       url('./fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'GeneralSans-Light';
-	src: url('./fonts/GeneralSans-Light.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Light.woff') format('woff'),
-			 url('./fonts/GeneralSans-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-display: swap;
-	font-style: normal;
+  font-family: 'SpaceGrotesk-Medium';
+  src: url('./fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+       url('./fonts/SpaceGrotesk-Medium.woff') format('woff'),
+       url('./fonts/SpaceGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'GeneralSans-LightItalic';
-	src: url('./fonts/GeneralSans-LightItalic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-LightItalic.woff') format('woff'),
-			 url('./fonts/GeneralSans-LightItalic.ttf') format('truetype');
-	font-weight: 300;
-	font-display: swap;
-	font-style: italic;
+  font-family: 'SpaceGrotesk-SemiBold';
+  src: url('./fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
+       url('./fonts/SpaceGrotesk-SemiBold.woff') format('woff'),
+       url('./fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'GeneralSans-Regular';
-	src: url('./fonts/GeneralSans-Regular.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Regular.woff') format('woff'),
-			 url('./fonts/GeneralSans-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-display: swap;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'GeneralSans-Italic';
-	src: url('./fonts/GeneralSans-Italic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Italic.woff') format('woff'),
-			 url('./fonts/GeneralSans-Italic.ttf') format('truetype');
-	font-weight: 400;
-	font-display: swap;
-	font-style: italic;
-}
-@font-face {
-	font-family: 'GeneralSans-Medium';
-	src: url('./fonts/GeneralSans-Medium.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Medium.woff') format('woff'),
-			 url('./fonts/GeneralSans-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-display: swap;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'GeneralSans-MediumItalic';
-	src: url('./fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-MediumItalic.woff') format('woff'),
-			 url('./fonts/GeneralSans-MediumItalic.ttf') format('truetype');
-	font-weight: 500;
-	font-display: swap;
-	font-style: italic;
-}
-@font-face {
-	font-family: 'GeneralSans-Semibold';
-	src: url('./fonts/GeneralSans-Semibold.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Semibold.woff') format('woff'),
-			 url('./fonts/GeneralSans-Semibold.ttf') format('truetype');
-	font-weight: 600;
-	font-display: swap;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'GeneralSans-SemiboldItalic';
-	src: url('./fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
-			 url('./fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
-	font-weight: 600;
-	font-display: swap;
-	font-style: italic;
-}
-@font-face {
-	font-family: 'GeneralSans-Bold';
-	src: url('./fonts/GeneralSans-Bold.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Bold.woff') format('woff'),
-			 url('./fonts/GeneralSans-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-display: swap;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'GeneralSans-BoldItalic';
-	src: url('./fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-BoldItalic.woff') format('woff'),
-			 url('./fonts/GeneralSans-BoldItalic.ttf') format('truetype');
-	font-weight: 700;
-	font-display: swap;
-	font-style: italic;
+  font-family: 'SpaceGrotesk-Bold';
+  src: url('./fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+       url('./fonts/SpaceGrotesk-Bold.woff') format('woff'),
+       url('./fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 /**
 * This is a variable font
 * You can control variable axes as shown below:
-* font-variation-settings: wght 700.0;
+* font-variation-settings: wght 300.0;
 *
 * available axes:
-'wght' (range from 200.0 to 700.0
+'wght' (range from 300.0 to 700.0
 */
 @font-face {
-	font-family: 'GeneralSans-Variable';
-	src: url('./fonts/GeneralSans-Variable.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-Variable.woff') format('woff'),
-			 url('./fonts/GeneralSans-Variable.ttf') format('truetype');
-	font-weight: 200 700;
-	font-display: swap;
-	font-style: normal;
+  font-family: 'SpaceGrotesk-Variable';
+  src: url('./fonts/SpaceGrotesk-Variable.woff2') format('woff2'),
+       url('./fonts/SpaceGrotesk-Variable.woff') format('woff'),
+       url('./fonts/SpaceGrotesk-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
 }
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 700.0;
-*
-* available axes:
-'wght' (range from 200.0 to 700.0
-*/
-@font-face {
-	font-family: 'GeneralSans-VariableItalic';
-	src: url('./fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
-			 url('./fonts/GeneralSans-VariableItalic.woff') format('woff'),
-			 url('./fonts/GeneralSans-VariableItalic.ttf') format('truetype');
-	font-weight: 200 700;
-	font-display: swap;
-	font-style: italic;
-}
+
